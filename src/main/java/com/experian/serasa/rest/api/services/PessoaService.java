@@ -17,6 +17,6 @@ public class PessoaService implements UserDetailsService {
 
   @Override
   public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-    return repository.findByNome(username);
+    return repository.findByLogin(username);
   }
 }
