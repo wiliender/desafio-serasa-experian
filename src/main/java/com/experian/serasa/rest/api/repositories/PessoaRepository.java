@@ -7,6 +7,9 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PessoaRepository extends JpaRepository<Pessoa, String> {
+
+  UserDetails findByLogin(String login);
+
   UserDetails findByNome(String nome);
 
   UserDetails findByIdade(int idade);
