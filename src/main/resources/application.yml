@@ -10,6 +10,7 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     properties.hibernate.show_sql: true
     properties.hibernate.format_sql: true
+    defer-datasource-initialization: true
 
   h2:
     console:
