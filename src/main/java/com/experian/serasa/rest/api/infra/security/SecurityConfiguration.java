@@ -31,10 +31,8 @@ public class SecurityConfiguration {
         .authorizeHttpRequests(
             authorize ->
                 authorize
-                    .requestMatchers(HttpMethod.GET, "/ping")
-                    .permitAll()
                     .requestMatchers(HttpMethod.POST, "/auth/register")
-                    .permitAll()
+                    .hasRole("ADMIN")
                     .requestMatchers(HttpMethod.POST, "/auth/login")
                     .permitAll()
                     .requestMatchers(HttpMethod.GET, "/auth/pessoa")
