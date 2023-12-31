@@ -76,6 +76,11 @@ public class PessoaService {
     if (score < 0 || score > 1000) {
       return ResponseEntity.badRequest().body("Score deve estar entre 0 e 1000.");
     }
+
+    if (data.login() == null || data.login().isEmpty()) {
+      return ResponseEntity.badRequest().body("O login não pode ser nulo ou vazio.");
+    }
+
     if (data.password() == null || data.password().isEmpty()) {
       return ResponseEntity.badRequest().body("A senha não pode ser vazia.");
     }
