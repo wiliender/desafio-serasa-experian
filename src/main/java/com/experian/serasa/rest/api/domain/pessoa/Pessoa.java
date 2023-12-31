@@ -32,6 +32,8 @@ public class Pessoa implements UserDetails {
   private String telefone;
   private int score;
   private PessoaRole role;
+  private String uf;
+  private String localidade;
 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -145,5 +147,41 @@ public class Pessoa implements UserDetails {
 
   public PessoaRole getRole() {
     return role;
+  }
+
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+
+  public void setIdade(int idade) {
+    this.idade = idade;
+  }
+
+  public void setCep(String cep) {
+    this.cep = cep;
+  }
+
+  public void setUf(String uf) {
+    this.uf = uf;
+  }
+
+  public String getUf() {
+    return uf;
+  }
+
+  public void setLocalidade(String localidade) {
+    this.localidade = localidade;
+  }
+
+  public String getLocalidade() {
+    return localidade;
+  }
+
+  public void setBairro(String bairro) {
+    this.bairro = bairro;
+  }
+
+  public void setLogradouro(String logradouro) {
+    this.logradouro = logradouro;
   }
 }
