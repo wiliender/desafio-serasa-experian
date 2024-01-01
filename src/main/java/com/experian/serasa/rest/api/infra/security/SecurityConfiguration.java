@@ -1,5 +1,6 @@
 package com.experian.serasa.rest.api.infra.security;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +19,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
+@SecurityRequirement(name = "bearerAuth")
 public class SecurityConfiguration {
   @Autowired SecurityFilter securityFilter;
 

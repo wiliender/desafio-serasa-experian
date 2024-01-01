@@ -8,6 +8,7 @@ import com.experian.serasa.rest.api.domain.pessoa.RegisterDTO;
 import com.experian.serasa.rest.api.infra.security.TokenService;
 import com.experian.serasa.rest.api.repositories.PessoaRepository;
 import com.experian.serasa.rest.api.services.PessoaService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,6 +17,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@SecurityRequirement(name = "bearerAuth")
 @RequestMapping("auth")
 public class AuthenticationController {
 
