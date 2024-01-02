@@ -14,6 +14,7 @@ Objetivo: Criar um serviço do tipo API REST, para cadastro de pessoas com score
 <div>
   <h2> Tecnologias </h2>
   <a target="_blank" href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">📌- Java (17)  <br></a>
+  <a target="_blank" href="https://www.h2database.com/html/main.html">📌- H2 Database  <br></a>
   <a target="_blank" href="https://spring.io/projects/spring-boot/">📌- Spring Boot  <br></a>
   <a target="_blank" href="https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/">📌- Spring Maven  <br></a>
   <a target="_blank" href="https://docs.spring.io/spring-framework/reference/web/webmvc.html">📌- Spring MVC  <br></a>
@@ -21,6 +22,7 @@ Objetivo: Criar um serviço do tipo API REST, para cadastro de pessoas com score
   <a target="_blank" href="https://springdoc.org/">📌- SpringDoc  <br></a>
   <a target="_blank" href="https://jwt.io/libraries?language=Java">📌- Token JWT  <br></a>
   <a target="_blank" href="https://spring.io/projects/spring-security/">📌- Spring Security  <br></a>
+
 </div>
 <div>
   <h2> Como Executar </h2>
